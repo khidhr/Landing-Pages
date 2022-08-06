@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/svg" href="monument.svg">
+    <title>Monument Gallery</title>
+</head>
+<body>
+
+    
+
+
+
+    <div class="green-box">
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="nav-check">
+            <label for="nav-check" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+    
+    
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span><i class="fa-solid fa-sliders"></i></span> Preferences</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span><i class="fa-solid fa-users"></i></span> Users</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span><i class="fa-solid fa-circle-info"></i></span> more Infos</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span><i class="fa-solid fa-arrow-right-from-bracket"></i></span> Log out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <header class="header">
+        <h1 class="header__primary">Bienvenue,Halab khidhr</h1>
+        <h3 class="header_tertiary">Users</h3>
+    </header>
+    <main class="main">
+        <form action="#" class="form">
+            <div class="form__box">
+                <div class="form__img">+</div>
+                <div class="form__group">
+                    <input type="text" id="name" class="form__input" placeholder="enter your name" required>
+                    <label for="name" class="form__label">full name</label>
+                    <img class="form__icon" src="ellipsis-solid.svg" alt="">
+                </div>
+                <div class="form__group">
+                    <input type="email" id="email" class="form__input" placeholder="enter your email" required>
+                    <label for="email" class="form__label"> email:</label>
+                    <img class="form__icon" src="ellipsis-solid.svg" alt="">
+                </div>
+                <div class="form__group">
+                    <input type="password" id="password" class="form__input" placeholder="enter your password" required>
+                    <label for="password" class="form__label"> password:</label>
+                    <img class="form__icon" src="ellipsis-solid.svg" alt="">
+                </div>
+                <a href="#" class="form__btn">add</a>
+                <a href="#popup" class="form__login">already signed in?</a>
+                
+            </div>
+        </form>
+        <div class="cardUser">
+            <img src="souther.jpeg" alt="souther" class="cardUser__img">
+            <h1 class="cardUser__name">Halab khidhr</h1>
+            <h2 class="cardUser__email">khidhrhalab@gmail.com</h2>
+            <h3 class="cardUser__contributionsNum">9 contributions</h3>
+        </div>
+    </main>
+    <nav class="navbar"> 
+        <ul class="navbar__list">
+            <div class="navbar__group">
+                <li class="navbar__item" id="sliders" ><a href="#" class="navbar__link" ><i class="fa-solid fa-sliders"></i></a></li>
+                <label for="sliders" class="navbar__label">Preferences</label>
+            </div>
+            <div class="navbar__group">
+                <li class="navbar__item" id="Users" ><a href="#" class="navbar__link" ><i class="fa-solid fa-users"></i></a></li>
+                <label for="Users" class="navbar__label">Users</label>
+            </div>
+            <div class="navbar__group">
+                <li class="navbar__item" id="infos" ><a href="#" class="navbar__link" ><i class="fa-solid fa-circle-info"></i></a></li>
+                <label for="infos" class="navbar__label">more Info</label>
+            </div>
+            <div class="navbar__group">
+                <li class="navbar__item" id="arrowBracket" ><a href="#" class="navbar__link" ><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                <label for="arrowBracket" class="navbar__label">log out</label>
+            </div>
+            
+           
+            
+        </ul>
+    </nav>
+    <div class="popup" id="popup">
+        <div class="popup__content">
+        <a href="#form" class="popup__close">x</a>
+            <form action="#" class="form">
+                <div class="form__box">
+                    <div class="form__img"><i class="fa-solid fa-sliders"></i></div>
+                    <h2 class="popup__header">Monument Catalog Login</h2>
+                    <div class="form__group">
+                        <input type="email" id="email1" class="form__input" placeholder="enter your email" required>
+                        <label for="email1" class="form__label"> email:</label>
+                        <img class="form__icon" src="ellipsis-solid.svg" alt="">
+                    </div>
+                    <div class="form__group">
+                        <input type="password" id="password1" class="form__input" placeholder="enter your password" required>
+                        <label for="password1" class="form__label"> password:</label>
+                        <img class="form__icon" src="ellipsis-solid.svg" alt="">
+                    </div>
+                    <a href="#" class="form__btn">log in</a>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

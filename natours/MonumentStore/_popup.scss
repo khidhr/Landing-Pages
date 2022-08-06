@@ -1,0 +1,36 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    transition: all .4s;
+    &:target {
+        opacity: 1;
+        z-index: 5;
+    }
+    background-color: rgba($color-black,.8);
+    h2.popup__header {
+        color: $color-primary;
+        margin: 3rem 0rem;
+    }
+    &__content {
+        // width: 40%;
+        background-color: $color-white;
+        height: max-content;
+        @include absPos(50%,50%);
+        transform: translate(-50%,-50%);
+        border-radius: 7px;
+    }
+    &__close {
+        font-size: 3rem;
+        padding-left: 3rem;
+        padding-top: 1.5rem;
+        display: inline-block;
+        text-decoration: none;
+        color: $color-primary;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,28 @@
+@media(max-width:970px) {
+    html {
+        font-size: 55%;
+    }
+    .main {
+        flex-direction:column-reverse;
+        gap:5rem;
+        padding: 5rem;
+    }
+    
+}
+@media(max-width:600px) {
+    html {
+        font-size: 45%;
+    }
+    .navbar {
+        display: none;
+        
+    }
+    body {
+        grid-template-areas: "green-box header"
+                             "main main"  ;
+    }
+    .navigation {
+        display: block;
+    }
+
+}
