@@ -1,0 +1,77 @@
+.heading-primary {
+    text-transform: uppercase;
+    color: $color-white;
+    animation-fill-mode: backwards;
+    backface-visibility: hidden;
+    padding-bottom: 5rem;
+    &--big{
+        display: block;
+        font-size:6rem ;
+        font-weight:700;
+        letter-spacing: 1.7rem;
+        @include text(inherit,6rem,700,inherit);
+        @include query(tabPort){
+            font-size: 4.5rem;
+        }
+        animation: fromLeft 1s ease-out 1s backwards;
+    }
+    &--small {
+        display: block;
+        letter-spacing: 1rem;
+        font-size: 2.2rem;
+        @include query(tabPort){
+            font-size: 1.8rem;
+        }
+        font-weight: 400;
+        @include text(inherit,2.2rem,400,inherit);
+        animation: fromRight 1s ease-out 2s backwards;
+       
+    }
+}
+.heading-secondary {
+    @include text(inherit,3.5rem,700,inherit);
+    @include query(tabPort){
+        font-size: 2.5rem;
+    }
+    @include query(phone){
+        font-size: 2.5rem;
+    }
+    text-align: center;
+    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    display: inline-block;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .6rem;
+    word-spacing: 1rem;
+    transition: all .3s;
+    perspective: 120rem;
+    &:hover{
+        transform: skew(-20deg) rotate(-7deg);
+
+        text-shadow: .3rem 1rem 1rem rgba($color-black,0.4);
+
+
+
+    }
+
+}
+.heading-tertiary {
+    @include text(inherit,$defaultFontSize,700,inherit) ;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    word-spacing: .4rem;
+    @include query(tabPort){
+        font-size: 1.5rem;
+    }
+}
+.paragraph {
+    font-size: $defaultFontSize;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    @include query(tabPort){
+        font-size: 1.2rem;
+    }
+}

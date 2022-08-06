@@ -1,0 +1,36 @@
+.util-center-text {
+    text-align: center !important;
+}
+.util-margbottom-big {
+    margin-bottom: 8rem !important;
+}
+.util-margbottom-medium {
+    margin-bottom: 4rem !important;
+    @include query(tabPort){
+        margin-bottom: 8rem !important;
+    }
+}
+.util-margbottom-small {
+    margin-bottom: 2rem !important;
+    @include query(tabPort){
+        margin-bottom: 4rem !important;
+    }
+}
+.util-padleft-small {
+    padding-left: 2rem !important;
+}
+.util-margtop-big {
+    margin-top: 8rem !important;
+    @include query(tabPort){
+        margin-top: 4rem !important;
+    }
+}
+.util-margtop-medium {
+    margin-top: 4rem !important;
+}
+.util-drag-left {
+    margin-left: -4rem !important;
+    @include query(tabPort){
+        margin-left: 0 !important;
+    }
+}

@@ -1,0 +1,75 @@
+@mixin text($Ffamily,$Fsize,$Fweight,$color) {
+    font-family:$Ffamily;
+    font-size: $Fsize;
+    font-weight: $Fweight;
+    color: $color;
+
+}
+@mixin absPos($left,$top){
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+@mixin clearFix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// RESPONSIVE DESIGN 
+
+/*
+0 - 600px : phone
+600 - 900 : Tablet portrait
+900 - 1200 : Tablet landscape
+1200 - 1800px : the normal scale for our code
+
+1800px + : Large Screens
+*/
+
+@mixin query($screenType) {
+    
+    @if  $screenType == bigPhone {
+        @media (max-width: 37.5em) { /*600 px*/
+            @content
+        };
+    }
+    @if  $screenType == phone {
+        @media (max-width: 28.125em) { /*450 px*/
+            @content
+        };
+    }
+    @if  $screenType == tabPort {
+        @media (max-width: 56.25em) { /*900 px*/
+            @content
+        };
+    }
+    @if  $screenType == tabLand {
+        @media (max-width: 75em) {
+            @content
+        };
+    }
+    @if  $screenType == largeScreen {
+        @media (min-width: 112.5em) {
+            @content
+        };
+    }
+    
+}
+@mixin exactScreenWidth($width) {
+    @media (max-width:$width){
+        @content
+    };
+    
+}
+
+
+
+
+
+
+
+
+

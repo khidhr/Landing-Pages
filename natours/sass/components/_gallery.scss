@@ -1,0 +1,39 @@
+.gallery {
+    position: relative;
+  
+
+    &__img {
+        width: 60%;
+        border-radius: 3px;
+        box-shadow: .5rem 2rem 2rem rgba($color-black,.3);
+        position: absolute;
+        transition: all .3s;
+        -moz-outline-radius:0px;
+        &--p1 {
+            top: 0;
+            left:-2rem;
+
+        }
+
+        &--p2 {
+            top: 3.5rem;
+            right: 0rem;
+
+        }
+
+        &--p3 {
+            top: 12rem;
+            left: 20%;
+        }
+        &:hover {
+            transform: scale(1.1) translateY(-.5rem);
+            outline: 1.5rem solid $color-primary;
+            box-shadow: .5rem 3rem 2.5rem rgba($color-black,.5);
+            z-index: 10;
+            outline-offset: 2rem;
+        }
+    }
+    &:hover &__img:not(:hover) {
+        transform: scale(.8);
+    }
+}

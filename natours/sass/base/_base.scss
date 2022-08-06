@@ -1,0 +1,37 @@
+html {
+    font-size: 62.5%;
+
+    // @include query(tabLand){
+    //     font-size: 70%;
+    // }
+    // @include query(tabPort){
+    //     font-size: 60%;
+    // }
+    // @include query(bigPhone){
+    //     font-size: 50%;
+    // }
+    // @include query(phone){
+    //     font-size: 40%;
+    // }
+    // @include query(largeScreen){
+    //     font-size: 80%;
+    // }
+}
+
+*,
+*::after,
+*::before {
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include text("Lato",1.6rem ,400,$color-grey-dark);
+    line-height: 1.7;
+    padding: 1.3rem;
+    box-sizing: border-box;
+    @include query(tabLand) {
+        padding: 0;
+    }
+}

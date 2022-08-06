@@ -1,0 +1,72 @@
+.section-about {
+    background-color: $color-grey-light-1;
+    padding:30rem 0;
+    margin-top: -20vh;
+    @include query(tabPort){
+        padding-bottom: 50rem;
+    }
+}
+
+.section-features {
+    background-image:linear-gradient(to right bottom,rgba($color-primary-light, 0.8),rgba($color-primary-dark, 0.8)),url(../img/nat-4.jpg) ;
+    background-size: cover;
+    padding: 20rem 0;
+    
+    .row {
+        pointer-events: none;
+        &:hover .feature-box:not(:hover) {
+            transform: scale(.9);
+        }
+    }
+    transform: skewY(-10deg);
+    margin-top: -12rem;
+    &>* {
+        transform: skewY(10deg);
+    }
+}
+
+.section-tours {
+    padding: 25rem 0 ;
+    padding-bottom: 10rem;
+    background-color: $color-grey-light-1;
+    margin-top: -14rem;
+    .row {
+        
+        pointer-events: none;
+        &:hover .card:not(:hover) {
+            transform: scale(.9);
+        }
+        
+    }
+}
+.section-stories {
+    
+    padding: 15rem 0;
+    margin-top: -10rem;
+    position: relative;
+}
+.section-booking {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark);
+}
+
+.book {
+    background-image: linear-gradient(105deg,rgba($color-white,.9)50%,
+                        transparent 50%), url(../img/nat-10.jpg);
+    background-size: cover;
+    height: 55rem;
+    border-radius: 3px;
+    box-shadow: 0rem 2rem 2rem rgba($color-black, .3);
+    @include query(tabPort){
+    background-image:linear-gradient(to right bottom,rgba($color-white, 0.8),rgba($color-white, 0.8)),url(../img/nat-10.jpg) ;
+
+    }
+    
+    &__form {
+        width: 50%;
+        padding: 3rem;
+        @include query(tabPort){
+            width: 100%;
+        }
+    }
+}

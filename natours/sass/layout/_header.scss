@@ -1,0 +1,30 @@
+.header {
+    height: 95vh;
+    background-image:linear-gradient(to right bottom,rgba($color-primary-light, 0.8),rgba($color-primary-dark, 0.8)),url(../img/hero.jpg) ;
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+    @include query(tabPort){
+    clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+        height: 85vh;
+    }
+    position: relative;
+    &__logo-box {
+       @include absPos(4rem,4rem);
+    }
+    &__logo {
+        height: 5rem;
+    }
+    &__center-box {
+       @include absPos(50%,35%);
+        transform: translate(-50%,-50%);
+        text-align: center;
+        @include query(tabPort){
+            @include absPos(50%,40%);
+        }
+    }
+    &__btn{
+        animation: fromBottom .5s ease-out 3s backwards;
+    }
+
+}
