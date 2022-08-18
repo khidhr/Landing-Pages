@@ -1,8 +1,17 @@
 :root {
+  
+  /*
+  DEFINING SOME CUSTOME PROPERTIES TO MAKE OUR WEBSITE FLEXIBLE FOR FUTURE CHANGES
+  */
+  
+  /*
+ COLORS
+  */
   --clr-accent-500: hsl(12, 60%, 45%);
   --clr-accent-400: hsl(12, 88%, 59%);
   --clr-accent-300: hsl(12, 88%, 75%);
   --clr-accent-100: hsl(13, 100%, 96%);
+  
 
   --clr-primary-400: hsl(228, 39%, 23%);
 
@@ -10,14 +19,26 @@
   --clr-neutral-200: hsl(0 0% 97%);
   --clr-neutral-100: hsl(0 0% 100%);
 
+  /*
+  FONT FAMILIES
+  */
+  
   --ff-primary: "Be Vietnam Pro", sans-serif;
 
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-primary);
 
+  /*
+  FONT WEIGHT
+  */
+  
   --fw-regular: 400;
   --fw-semi-bold: 500;
   --fw-bold: 700;
+  
+  /*
+  FONT SIZE
+  */
 
   --fs-300: 0.8125rem;
   --fs-400: 0.875rem;
@@ -32,6 +53,8 @@
   --fs-secondary-heading: var(--fs-700);
   --fs-nav: var(--fs-500);
   --fs-button: var(--fs-300);
+  
+  
 
   --size-100: 0.25rem;
   --size-200: 0.5rem;
